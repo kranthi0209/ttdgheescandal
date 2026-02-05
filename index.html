@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TTD – Ghee Adulteration Scandal Repository</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1722bb;
+            --secondary: #f5b700;
+            --accent: #1f3c88;
+            --bg: #f2f4f8;
+            --card: #eef1cf;
+            --text: #2c2c2c;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #b2a422);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        /* 3 tiles per row */
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .tiles {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .tiles {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tile {
+            background: var(--card);
+            border-radius: 18px;
+            padding: 32px;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+            transition: all 0.4s ease;
+        }
+
+        .tile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 22px 45px rgba(0,0,0,0.22);
+        }
+
+        .tile::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
+        }
+
+        .tile:hover::after {
+            transform: translateX(100%);
+        }
+
+        .icon {
+            font-size: 44px;
+            margin-bottom: 18px;
+        }
+
+        .tile h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        .tile p {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            opacity: 0.85;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TTD – Ghee Adulteration Scandal</h1>
+    <p>Documents, Events & Investigation Repository</p>
+</header>
+
+<div class="container">
+    <div class="tiles">
+
+        <a href="events.html" class="tile">
+            <div class="icon">📅</div>
+            <h3>Events in Chronological Order</h3>
+            <p>Step-by-step timeline of policy changes, procurement, and exposure.</p>
+        </a>
+
+        <a href="documents.html" class="tile">
+            <div class="icon">📂</div>
+            <h3>Documents Collected</h3>
+            <p>Tenders, invoices, lab reports, approvals & official correspondence.</p>
+        </a>
+
+        <a href="notes.html" class="tile">
+            <div class="icon">📝</div>
+            <h3>Notes Prepared</h3>
+            <p>Issue briefs, analytical notes, contradictions & responsibility mapping.</p>
+        </a>
+
+        <a href="sources.html" class="tile">
+            <div class="icon">🔗</div>
+            <h3>Other Important Sources</h3>
+            <p>Media reports, RTI documents, independent findings & references.</p>
+        </a>
+
+        <a href="whoiswho.html" class="tile">
+            <div class="icon">👥</div>
+            <h3>Who is Who?</h3>
+            <p>Officials, accused firms, intermediaries and beneficiary chain.</p>
+        </a>
+
+        <a href="court-status.html" class="tile">
+            <div class="icon">⚖️</div>
+            <h3>Status of Court Proceedings</h3>
+            <p>FIRs, chargesheets, hearings, bail status & trial progress.</p>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    © TTD Ghee Adulteration Case Repository | Documentation & Public Record
+</footer>
+
+</body>
+</html>

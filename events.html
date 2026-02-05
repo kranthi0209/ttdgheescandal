@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Events – TTD Ghee Adulteration Scandal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #8b0000;
+    --accent: #1f3c88;
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --text: #2c2c2c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--primary), #b22222);
+    color: white;
+    padding: 30px 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.header-inner {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-btn {
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+h2 {
+    color: var(--accent);
+}
+
+.intro {
+    max-width: 900px;
+    margin-bottom: 35px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* ================= STATIC SECTION CARD ================= */
+
+.section-card {
+    background: var(--card);
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    padding: 22px 26px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* ================= NESTED ACCORDION ================= */
+
+.nested-accordion {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.nested-header {
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #fdfad3a1;
+}
+
+.nested-header span {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.nested-accordion.active .nested-header span {
+    transform: rotate(45deg);
+}
+
+.nested-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-left: 20px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* HIGHLIGHT Date */
+.highlight-date {
+    color: #2b1319;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.refbtn {
+  background-color: #fcea874f;
+  color: rgb(16, 8, 95);
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 20px;
+  
+}
+/* ================= PDF MODAL ================= */
+
+.pdf-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-modal-content {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    height: 95%;
+    border-radius: 14px;
+    position: relative;
+}
+
+.pdf-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <h1>TTD – Ghee Adulteration Scandal Repository</h1>
+        <a href="index.html" class="home-btn">🏠 Home</a>
+    </div>
+</header>
+
+<div class="container">
+
+<h2>List of all the Events Happened in Chronological Order</h2>
+<p class="intro">
+This section presents a structured, chronological narrative of how the ghee adulteration
+scandal evolved — from the background and early attempts, through systematic execution
+across multiple phases, and finally to investigation and legal action.
+</p>
+<!-- ================= SECTION 1 ================= -->
+<div class="section-card">
+    <div class="section-title">Foundation & Establishment of the Dairies involved (1995-2012)</div>
+
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">Founding of M/s A R Dairy Food (A-1)<span>＋</span></div>
+            <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	May 5, 1995	 : 	</u></a>	 M/s A R Dairy Food Private Limited (A-1) was initially registered under the name "Sarayu Cryogenics Private Limited" with the Registrar of Companies (ROC) in Coimbatore.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 23, 1995	 : 	</u></a>	 The company officially changed its name to M/s A R Dairy Food Private Limited (A-1).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 27, 1996	 : 	</u></a>	 Srinivasalu Naidu Ramachandran Srinivasan, the father-in-law of the Managing Director, was appointed as a Director of the company.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 27, 2006	 : 	</u></a>	 Smt. Rajasekaran Surya Prabha, wife of the Managing Director Raju Rajasekaran (A-2), was appointed as a Director of the company.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+ </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Establishment of M/s Sri Vyshnavi Dairy (A-6)<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	September 15, 1999	 : 	</u></a>	 M/s Sri Vyshnavi Dairy Specialties Private Limited (A-6) was registered with the ROC in Chennai with two directors  Shri Rajesh M. Chavda (A-20) and Shri Divvela Venkateswara Rao.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	2009	 : 	</u></a>	 The company purchased land in Punabaka village (Pellakuru Mandal, Tirupati District) to establish a plant.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	2011	 : 	</u></a>	 M/s Sri Vyshnavi Dairy Specialties Private Limited (A-6) began production at the Punabaka village plant after shifting machinery from their Chennai facility.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Incorporation of other key entities used in operations<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	January 28, 2011	 : 	</u></a>	 M/s Malganga Milk and Agro Products Private Limited (A-19) was incorporated with the ROC in Pune.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	October 5, 2012	 : 	</u></a>	 M/s Harsh Fresh Dairy Products Private Limited (which was later renamed M/s Bhole Baba Oroganic Dairy Milk Private Limited (A-7) in 2021) was incorporated with the ROC in Uttarakhand.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Management changes and succession planning<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	2014	 : 	</u></a>	 Aashish Agarwwal (A-15) is looking after the Business Affairs relating to Ghee trading of the following firms after death of his father in the year 2014	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	July 21, 2014	 : 	</u></a>	 Machindra Shantaram Lanke (A-18), S/o Shantaram Bhau Lanke was appointed as an ‘Additional Director’ of M/s Malganga Milk and Agro Products Private Limited (A-19).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 8, 2016	 : 	</u></a>	 Vipin Jain (A-4) became a Director of M/s Bhole Baba Oroganic Dairy Milk Private Limited (A-7),.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 25, 2016	 : 	</u></a>	 Smt. Poonam Jain (A-22) was the Director of M/s Bhole Baba Oroganic Dairy Milk Private Limited (A-7) for the period from 25.05.2016 to 15.07.2024.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 30, 2014	 : 	</u></a>	 The designation of Machindra Shantaram Lanke (A-18) was officially changed to Director of the company.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 8, 2017	 : 	</u></a>	 License No. 10014012000288 was granted by CLA, UK to M/s Harsh Fresh Dairy Products Private Limited (A-7), Bhagwanpur, UK.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 21, 2017	 : 	</u></a>	 Registration Certificate vide Regn. No. 37AAFCS152D1ZP issued by GST in the name of M/s Sri Vyshnavi Dairy Specialties Private Limited (A-6).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 23, 2019	 : 	</u></a>	 Machindra Shantaram Lanke (A-18) was appointed as ‘Managing Director’ of M/s Malganga Milk and Agro Products Private Limited (A-19).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- ================= SECTION 2 ================= -->
+<div class="section-card">
+    <div class="section-title">Initial Attempts to Enter TTD Supply System (During TDP's RUle)</div>
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">Initial entry into TTD supply system but failed due to scrutiny<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	April 17, 2018	 : 	</u></a>	 The General Manager (Procurement), TTD, issued proceedings for a technical team to inspect the plants of qualified dairies of Tenderers’ before opening financial bid.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 27, 2018	 : 	</u></a>	 Dr. Kasireddy Haranath Reddy (A-31), Peruru Jagadeeswara Reddy (A-28), and Dr. Battula Surendranath (A-35) inspected M/s Harsh Fresh Dairy Products Private Limited (A-7) and submitted a favorable report despite the company submitting its own experience certificate rather than one from a client.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	June 5, 2018	 : 	</u></a>	 TTD published a Notice Inviting Tender (NIT) vide Roc No. M1/34022(31)/106/MRKT/2018 for the supply of 19,00,000 Kgs of Cow Ghee,.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	June 20, 2018	 : 	</u></a>	 The technical bid evaluation committee of TTD rejected the bid of M/s Harsh Fresh Dairy Products Private Limited (A-7) on the ground that “technical tender not approved as requirements are not fulfilled”,.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Success achieved during General Election–busy administrative period<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	February 18, 2019	 : 	</u></a>	 TTD floated a Notice Inviting Tender (NIT) vide Roc No. M1/34022(31)/41/MRKT/2019 for the supply of 82,000 Kgs of Cow ghee through Tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 27, 2019	 : 	</u></a>	 M/s Harsh Fresh Dairy Products Pvt Ltd (A-7) participated in the tender for 82,000 Kgs and submitted physical document to TTD along with forwarding letter.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 6, 2019	 : 	</u></a>	 M/s Harsh Fresh Dairy Products Pvt Ltd (A-7) qualified in the Technical bid for supply of 82,000 Kgs Cow Ghee with Agmark Special Grade through Tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 25, 2019	 : 	</u></a>	 The FSSAI approved the beta sitosterol test method for detecting vegetable oil in ghee.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	April 19, 2019	 : 	</u></a>	 TTD issued a supply order to M/s Harsh Fresh Dairy Products Private Limited (A-7) for 82,000 kgs of cow ghee in tins at the rate of Rs. 291/- per kg	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- ================= SECTION 3 ================= -->
+<div class="section-card">
+    <div class="section-title">Phased Execution of the Conspiracy (During YCP's Rule)</div>
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">	Imposition of Strict Tender Rules to Prevent Entry of Ineligible Dairies	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	Aug-19	 : 	</u></a>	 TTD significantly strengthened tender conditions, requiring national dairies to collect 4 lakh litres of milk daily and possess an annual turnover of ₹250 Crores.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	August 6, 2019	 : 	</u></a>	 Peruru Jagadeeswara Reddy (A-28) and Maddi Vijayabhasker Reddy (A-34) inspected M/s Harsh Fresh Dairy Products Private Limited (later M/s Bhole Baba (A-7)) and recommended it as "Not qualified technically" due to a lack of milk collection.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 7, 2019	 : 	</u></a>	 TTD published a Notice Inviting Tender (NIT) for the procurement of 70,000 kg of Cow Ghee through Tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 23, 2019	 : 	</u></a>	 TTD rejected the bid of M/s Harsh Fresh (A-7) for ghee in tins on the ground that there was "No collection of Milk as per FSSAI returns".	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Formation of a Secret Alliance to Circumvent Tender Conditions Using Proxy Firms	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	Oct-19	 : 	</u></a>	 Pomil Jain (A-3) and Vipin Jain (A-4) (Directors of M/s Bhole Baba (A-7)) approached Rajesh M. Chavda (A-20) and Apurva Vinaykanth Chavda (A-5) (CEO of M/s Sri Vyshnavi Dairy Specialties Private Limited (A-6)) to participate in TTD tenders using A-6’s name while the actual ghee would be supplied by A-7 in exchange for a 2% commission.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	Late 2019	 : 	</u></a>	 Dairy Expert Maddi Vijayabhasker Reddy (A-34) conspired with Pomil Jain (A-3) and suggested that M/s Bhole Baba (A-7) participate in tenders using M/s Malganga Milk and Agro Products Private Limited (A-19) as another front.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	December 16, 2019	 : 	</u></a>	 M/s Malganga (A-19) was disqualified in a technical bid for having insufficient ghee production capacity.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Deliberate Relaxation of ghee procurement Norms by TTD	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	January 8, 2020	 : 	</u></a>	 P. Jagadeeswara Reddy (A-28), Dr. Mallam Mahender (A-32), and Dr. Kasireddy Haranath Reddy (A-31) inspected the M/s Sri Vyshnavi (A-6) plant and marked it "Approved" despite a lack of bulk production capacity.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 29, 2020	 : 	</u></a>	 The TTD Board passed Resolution No. 371, relaxing ghee tender eligibility criteria, which allowed private dairies without adequate milk procurement to qualify.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Grant of Initial Supply Orders and Commencement of Adulterated Ghee Supply	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	March 5, 2020	 : 	</u></a>	 TTD issued a supply order to M/s Sri Vyshnavi (A-6) for 27,200 kgs of Cow Ghee in tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 13, 2020	 : 	</u></a>	 Posting RSSVR Subrahmanyam (A-29) as General Manager (Procurement) for TTD for his second term.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	Dec-20	 : 	</u></a>	 M/s Bhole Baba (A-7) took a plant in Fatehpur on lease to show increased capacity by clubbing it with their Bhagwanpur plant.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	December 22, 2020	 : 	</u></a>	 A sub-lease deed for the Fatehpur plant was executed between Ekta Dairy and M/s Bhole Baba (A-7).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 15, 2021	 : 	</u></a>	 RSSVR Subrahmanyam (A-29) and Dr. Venkatasamy Venkatasubramanian (A-33) inspected M/s Sri Vyshnavi (A-6) and qualified them for tanker supplies.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	July 9, 2021	 : 	</u></a>	 M/s Harsh Fresh Dairy Products Private Limited officially changed its name to M/s Bhole Baba Oroganic Dairy Milk Private Limited (A-7).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 24, 2021	 : 	</u></a>	 M/s Harsh Fresh Dairy Foodz Private Limited (A-11) was incorporated, later used by the Jain brothers (A-3, A-4) to trade oils like Palm Oil and Palmolein used in adulteration.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	November 5, 2021	 : 	</u></a>	 TTD floated an NIT for 20,50,000 kgs of cow ghee from national-wide dairies.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	December 22–23, 2021	 : 	</u></a>	 RSSVR Subrahmanyam (A-29), Dr. Kulkarni Jayaraj Rao (A-36), and Dr. Battula Surendranath (A-35) inspected M/s Bhole Baba (A-7) plants and accepted bribes of Samsung Galaxy S-20 mobile phones from Pomil Jain (A-3).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	January 3, 2022	 : 	</u></a>	 TTD floated an NIT for 63,000 kg of Cow ghee in tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 2, 2022	 : 	</u></a>	 TTD issued a supply order to M/s Bhole Baba (A-7) for 7,17,500 kgs of cow ghee at ₹329/- per kg.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 14, 2022	 : 	</u></a>	 A formal agreement was signed with M/s Bhole Baba (A-7) for the supply of 63,000 kgs of ghee in tins.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Chairman's Office Bribe Demand and Retaliatory Pressure Tactics	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	April 25, 2022	 : 	</u></a>	 TTD floated an NIT for 24,50,000 Kgs of Cow ghee (National Category).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	2022	 : 	</u></a>	 Kaduru Chinnappanna (A-24), close aid to Y.V Subba Reddy approached TTD’s procurement dept General Manager (GM) and took the details of all ghee suppliers to the TTD.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 10, 2022	 : 	</u></a>	 Technical evaluation for the 24.5 lakh kg tender was held; M/s Bhole Baba (A-7) was marked as "subject to verification of production details".	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 15, 2022	 : 	</u></a>	 Kaduru Chinnappanna (A-24), acting as PA to the then TTD Chairman, reached out to Pomil Jain (A-3)/M/s Bhole Baba (A-7) and asked for a bribe of ₹25/kg of ghee supplied to TTD. The company refused. pressurized the TTD’s GM (procurement) to conduct a second physical inspection of their plant against the TTD rules with the intention to get them disqualified with the ghee supply tenders to be floated shortly 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 20, 2022	 : 	</u></a>	 TTD management decided to send ghee samples from current suppliers to the CFTRI Lab, Mysore for testing.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	June 6, 2022	 : 	</u></a>	 RSSVR Subrahmanyam (A-29) and a technical team inspected M/s Bhole Baba (A-7)’s Fatehpur plant and disqualified it due to unsatisfactory manufacturing practices.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	August 3, 2022	 : 	</u></a>	 CFTRI Mysore issued reports confirming that ghee samples from M/s Bhole Baba (A-7), M/s Sri Vyshnavi (A-6), and Premier Agri Foods were adulterated with vegetable oil.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Willful Ignoring of Adulteration Findings and Continued Supply Approvals	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	August 8, 2022	 : 	</u></a>	 RSSVR Subrahmanyam (A-29) recommended an additional 15% supply order for M/s Bhole Baba (A-7), despite the CFTRI reports confirming adulteration.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 16, 2022	 : 	</u></a>	 P. Jagadeeswara Reddy (A-28), RSSVR Subrahmanyam (A-29), Maddi Vijayabhasker Reddy (A-34), and Dr. Battula Surendranath (A-35) inspected M/s Malganga (A-19) and qualified it to supply M/s Bhole Baba (A-7)’s adulterated ghee.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Systematic Use of Front Companies to Conceal the True Source of Ghee	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	Oct-22	 : 	</u></a>	 M/s Bhole Baba (A-7) ceased direct supply of ghee to TTD following its disqualification. After blacklisting, supplied via proxy/shell entities such as M/s Sri Vyshnavi (A-6), M/s A R Dairy (A-1), M/s Malganga (A-19), etc., with collusion of officials	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	2022	 : 	</u></a>	 Kaduru Chinnappanna (A-24), then got acquainted with Premier Agri foods and struck a deal as Bhole Baba got disqualified. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	January 14, 2023	 : 	</u></a>	 M/s Malganga (A-19) began supplying adulterated ghee to TTD.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+ </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Capture of the Procurement System and Establishment of Supply Monopoly	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	Apr-23	 : 	</u></a>	 On instructions from Pomil Jain (A-3), Apurva Vinaykanth Chavda (A-5) approached Raju Rajasekaran (A-2), MD of M/s A R Dairy (A-1), offering a commission of ₹3/- per kg to use his company as a front for TTD tenders.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	April 23, 2023	 : 	</u></a>	 A-5 shared a list of required tender documents with Raju Rajasekaran (A-2) via WhatsApp.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 13, 2023	 : 	</u></a>	 Apurva Vinaykanth Chavda (A-5) created a fraudulent Gmail account (ardairyfoodpvtltd@gmail.com) to manage A R Dairy's tender communications.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 14, 2023	 : 	</u></a>	 Directors of M/s Sri Vyshnavi (A-6) agreed to sell the company to Pomil Jain (A-3).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	Oct-23	 : 	</u></a>	 TTD floated new tenders for ghee under the National and 1500 km radius categories.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	October 21, 2023	 : 	</u></a>	 M/s Bhole Baba (A-7) transferred ₹70 lakhs to A R Dairy (A-1) to enable the company to pay tender deposits (EMD).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	October 26, 2023	 : 	</u></a>	 P. Murali Krishna (A-30) and Dr. Battula Surendranath (A-35) inspected M/s Sri Vyshnavi (A-6) and approved it.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	November 8, 2023	 : 	</u></a>	 P. Murali Krishna (A-30), Dr. Battula Surendranath (A-35), and Yedam Nagendra Prasad (A-9) inspected A R Dairy (A-1) and issued a favorable report despite limited capacity and layout deficiencies.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	January 15, 2024	 : 	</u></a>	 Pomil Jain (A-3) and his family officially became Directors of M/s Sri Vyshnavi (A-6).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 28, 2024	 : 	</u></a>	 TTD floated a new tender for 10,00,000 Kgs of cow ghee under the 1500 km radius category.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 12, 2024	 : 	</u></a>	 The TTD technical evaluation committee recommended A R Dairy (A-1) for the financial bid without scrutinizing their forged FSSAI production returns.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	April 8, 2024	 : 	</u></a>	 Commission Agent P.P. Srinivasan, on instructions from Pomil Jain (A-3), quoted an unviable price of ₹319.80 per kg for A R Dairy (A-1).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	April 9, 2024	 : 	</u></a>	 P. Murali Krishna (A-30) informed experts of the low rate; experts warned that the price was "less than butter price" and advised stringent checks	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 15, 2024	 : 	</u></a>	 TTD issued a supply order in favour of M/s A R Dairy Food Private Limited (A-1) for 10 lakh kgs of Cow Ghee at the rate of Rs. 319.80 per kg.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 21, 2024	 : 	</u></a>	 As part of the conspiracy, an additional EMD amount of Rs. 29 lakh was transferred by M/s Bhole Baba Oroganic Dairy Milk Private Limited (A-7) to M/s A R Dairy Food Private Limited (A-1), which was then transferred to TTD.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 22, 2024	 : 	</u></a>	 Apurva Vinaykanth Chavda (A-5) created a WhatsApp group named "Ttd Ar Dairy" for coordination and effective communication between M/s Sri Vyshnavi Dairy Specialties Private Limited (A-6) and M/s A R Dairy Food Private Limited (A-1).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">	Manipulation of Transport, Invoicing, and Re-branding to Destroy Traceability	<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        
+
+    </ul>
+</div>
+<!-- ================= SECTION 4 ================= -->
+<div class="section-card">
+    <div class="section-title">Doubt araised - Tests Failed (During NDAs's Rule)</div>
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">Doubt on the Quality of Ghee - Beginning of the Downfall of the dark empire<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	June 26, 2024	 : 	</u></a>	 Shri P. Sathish Kumar (AGM, A-1) received a phone call from the Deputy EO (Warehouse) regarding the quality of ghee being supplied.
+<li><a class="highlight-date""><u>	June 27, 2024	 : 	</u></a>	 Shri P. Sathish Kumar (AGM, A-1) received a warning from the Joint Executive Officer regarding ghee quality.
+<li><a class="highlight-date""><u>	June 28, 2024	 : 	</u></a>	 Raju Rajasekaran (A-2) called Apurva Vinaykanth Chavda (A-5) and discussed reducing the adulteration combination from 30% to 15% to avoid variations in lab results.
+<li><a class="highlight-date""><u>	June 29, 2024	 : 	</u></a>	 A meeting was held at Tirupati where the TTD EO instructed representatives of A-1 and A-6 to improve ghee quality due to devotee complaints.
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Tests Conducted - Unearthing the conspiracy<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	July 5, 2024	 : 	</u></a>	 TTD decided to collect additional samples from ghee tankers for external testing at NDDB CALF.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	July 6, 2024	 : 	</u></a>	 Samples were drawn under CCTV coverage for TTD and NDDB CALF labs. Samples drawn from Fifth & Sixth Tankers	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	July 12, 2024	 : 	</u></a>	 Samples were drawn for NDDB CALF from seventh and eighth tankers.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	July 12, 16, and 23, 2024	 : 	</u></a>	 NDDB CALF issued test reports confirming that the 5th to 8th tankers from M/s A R Dairy Food Private Limited (A-1) contained foreign fats.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- ================= SECTION 5 ================= -->
+<div class="section-card">
+    <div class="section-title">Rejecting the Tankers by TTD - Redirecting them with Proxy</div>
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">Fresh Orders to AR Dairy Food Private Ltd<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Tests Conducted - Rejected Tankers - Rerouting Tankers<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- ================= SECTION 4 ================= -->
+<div class="section-card">
+    <div class="section-title">Declaring & Confirming the Conspiracy - Investigation - Judicial Proceedings</div>
+    <ul>
+        <li class="nested-accordion"><div class="nested-header">EO ,TTD’s views to Public (Press Meeting)<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Public Announcement by HCM <span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	September 18, 2024	 : 	</u></a>	 The HCM made the first public announcement regarding the detection of foreign fats, including suspected animal fats, in the ghee supplied to TTD.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Lab reports made public & High Court petition <span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Dy CM’s Reaction<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Hearing scheduled - State SIT constituted<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date"onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"><u>Date:</u></a>of incorporation and registration details</li>
+                </ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Supreme Court petition & Criminal case registered <span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	September 24, 2024	 : 	</u></a>	 Subramanian Swamy filed a petition in the Supreme Court seeking an independent probe.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 25, 2024	 : 	</u></a>	 A formal criminal case was registered at Tirupati East Police Station (FIR No. 470/2024).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Comments of High Court & Status report to HC<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	September 25, 2024	 : 	</u></a>	 The HC hears a batch of petitions; observes religious sensitivity and stresses that public statements must be evidence-based. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	September 26, 2024	 : 	</u></a>	 The state informed the status report detailed the lab findings, action against suppliers, FIR Registration, constitution of the state SIT and ongoing investigation steps. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">CBI-led SIT ordered by SC & Formation of SIT<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	October 4, 2024	 : 	</u></a>	 The Hon’ble Supreme Court of India ordered the reconstitution of the SIT under the supervision of the Director, CBI comprising five members including CBI, police, and food-safety experts. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Investigation phase - Major Arrests<span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	Oct 2024 – Dec 2025 	 : 	</u></a>	 14-month investigation across 12 states; searches conducted in Tamil Nadu , Uttarakhand, Delhi, Haryana, Rajasthan, Maharashtra, Karnataka, Telangana, UP and others. Focus shifts to synthetic ghee manufacturing and procurement fraud. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 9, 2025	 : 	</u></a>	 Arrest of arraigned accused Raju Rajasekaran (A-2), Pomil Jain (A-3), Vipin Jain (A-4), and Apurva Vinaykanth Chavda (A-5).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	February 17, 2025	 : 	</u></a>	 During Panchanama proceedings, Apurva Vinaykanth Chavda (A-5), Yedam Nagendra Prasad (A-9), and Karamala Shekar (A-10) admitted to the payment and receipt of undue advantages.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	March 21, 2025	 : 	</u></a>	 Arrest of arraigned accused Hari Mohan @ Hari Mohan Rana (A-12) and Aashish Agarwwal (A-15).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	November 7, 2025	 : 	</u></a>	 Arrest of arraigned accused Ajay Kumar Sugandh (A-16).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	November 28, 2025	 : 	</u></a>	 Arrest of arraigned accused and former GM (Procurement) Rallapalli Srinivasa Sri Venkata Rama Subrahmanyam (A-29).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	November 28, 2025	 : 	</u></a>	 Arrest of arraigned accused and former GM (Procurement) Rallapalli Srinivasa Sri Venkata Rama Subrahmanyam (A-29).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+        <li class="nested-accordion"><div class="nested-header">Test Reports - Charge Sheets <span>＋</span></div>
+        <div class="nested-content">
+                <ul>
+                    <li><a class="highlight-date""><u>	March 27, 2025	 : 	</u></a>	 NDDB CALF issued its final test report concluding that the ghee samples were primarily a mixture of Palm oil, Palm stearin, and Palm kernel oil.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 16, 2025	 : 	</u></a>	 NDRI, Karnal issued a report stating that no LARD (animal fat) was detected in the four ghee samples.	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	May 6, 2025	 : 	</u></a>	 The first chargesheet (SIT 01/2025) was officially dated and filed in the court. 	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+<li><a class="highlight-date""><u>	January 23, 2026	 : 	</u></a>	 The SIT's extensive investigation concluded that adulterated ghee was supplied to TTD from 2019-2024, totaling ~68 lakh kg (worth ~Rs 250 crore). Adulterants included Palm oil, Palm Kernel Oil, Palmolein, and Synthetic chemicals (e.g., acetic acid ester, monodiglycerides, beta-carotene, artificial ghee flavors) to mimic pure cow ghee properties and manipulate test values (e.g., Reichert-Meissl value).	<a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">1</button></a><a onclick="openPdfModal('https://drive.google.com/file/d/1Qfd5H3-ZYcnXbfnf1rJM6mFDFtVNHc4y/preview')"> <button class="refbtn">2</button></a></li>
+</ul>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+
+<footer style="text-align:center;padding:20px;">
+© TTD Ghee Adulteration Case Repository | Events Documentation
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+document.querySelectorAll('.nested-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const item = header.parentElement;
+        const content = item.querySelector('.nested-content');
+
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+            content.style.maxHeight = '0px';
+        }
+    });
+});
+
+function openPdfModal(url) {
+    document.getElementById('pdfFrame').src = url;
+    document.getElementById('pdfModal').style.display = 'flex';
+}
+
+function closePdfModal() {
+    document.getElementById('pdfFrame').src = '';
+    document.getElementById('pdfModal').style.display = 'none';
+}
+</script>
+
+<div class="pdf-modal" id="pdfModal">
+    <div class="pdf-modal-content">
+        <span class="pdf-close" onclick="closePdfModal()">✖</span>
+        <iframe id="pdfFrame" class="pdf-frame"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
